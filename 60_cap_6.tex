@@ -1,8 +1,7 @@
-\chapter{Lezione 4 - Architettura di Enterprise Resource Planning System}
+\chapter{Lezione 6 - Sviluppo di un ERPS}
 
-Benvenuti a questa nuova lezione architettura di un enterprise resource planning system.
-Tratteremo in questa lezione la parte che riguarda la gestione delle informazioni.
-Gli argomenti che tratteremo sono lo schema dell'architettura, i principi fondativi di un enterprise resource planning system e la base delle informazioni, come le informazioni vengono gestite.
+Benvenuti a questa lezione sullo sviluppo di un sistema per la gestione delle risorse di impresa, Enterprise Resource Planning System.
+Gli argomenti che tratteremo in questa lezione sono delle generalità sui metodi, i metodi partecipativi che verranno descritti in maniera più approfondita.
 
 Argomenti trattati:
 
@@ -12,12 +11,501 @@ Argomenti trattati:
   \includegraphics[width=0.50\textwidth,
                     trim=40 100 40 60, % L B R T
                     clip]
-                    {images/Lez04_p01_fig_02}
+                    {images/Lez06_p01_fig_02}
   % \caption{Sommario}
   % \label{fig:Lez15_p06_fig_02}
 \end{figure}
 \FloatBarrier
 \noindent
 
-Ma vediamo innanzitutto il primo argomento, schema dell'architettura, e lo vedremo in una maniera molto sintetica, il massimo della sintesi.
+\section{Generalità}
 
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=40 100 40 60, % L B R T
+                    clip]
+                    {images/Lez06_p01_fig_04}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Generalità, definizione di un metodo di sviluppo di un sistema, è un percorso di attività conforme al ciclo di vita di un Enterprise Resource Planning System.
+Percorso di attività conforme significa che vengono definite le attività che devono essere svolte, le modalità, le funzionalità, le funzioni, le figure professionali che devono essere coinvolte e il metodo di lavoro per organizzare queste figure professionali e le diverse attività.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=40 80 40 60, % L B R T
+                    clip]
+                    {images/Lez06_p01_fig_05}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Esistono diversi metodi sulla base di alcune caratteristiche che vedremo.
+In tutti i metodi viene coinvolto il committente o l'utente che deve rivedere e controllare.
+Vedremo che una grande caratterizzazione di questi metodi consiste proprio nel modo in cui viene coinvolto o il committente o l'utente in questa procedura di sviluppo.
+Il committente è la persona che presenta il problema, la persona che ha un ambiente che deve essere migliorato, quindi coinvolge gli eventuali sviluppatori, gli analizzatori del suo ambiente lavorativo. L'utente sarà la persona dell'organizzazione committente che utilizzerà gli strumenti o sarà oggetto delle modifiche che saranno proposte dal consulente o dal gruppo di progettazione di analisi.
+
+L'obiettivo del sviluppo di un sistema ERPS è il contenimento dei tempi e dei costi.
+
+Il lavoro vuole essere fatto in maniera più efficiente, quindi in un tempo ragionevolmente minore rispetto alle risorse disponibili e possibilmente con costi in termini di impegno di risorse umane e risorse economiche minori.
+
+Vediamo quali sono gli elementi costituenti, innanzitutto le figure professionali.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=40 80 40 60, % L B R T
+                    clip]
+                    {images/Lez06_p01_fig_06}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Sono coinvolte diverse figure professionali, parecchie categorie di figure professionali.
+L'utente sarà il lavoratore che utilizzerà gli strumenti proposti o sarà oggetto dei cambiamenti, il committente è chi è il problema, il manager, il dirigente dell'organizzazione che richiede l'intervento, che sente la necessità di un cambiamento, poi ci saranno analisti, progettisti, gli analisti studiano il contesto lavorativo, il progettista propone una soluzione.
+I sistemisti e i programmatori sono il personale tecnico, i sistemisti si occupano della manutenzione degli strumenti e i programmatori sono gli effettivi realizzatori dei programmi, delle applicazioni, dell'installazione degli applicativi.
+
+Un segretario e un coordinatore per gestire, per verbalizzare le riunioni che verranno sostenute nei vari metodi.
+
+Inoltre sono necessari degli strumenti di documentazione, a cosa servono gli strumenti di documentazione?
+Gli strumenti di documentazione servono essenzialmente per due questioni, da una parte trasmettere il risultato di ogni fase, di ogni attività alle figure professionali che interverranno successivamente, quindi passare i risultati della fase di analisi ai progettisti, i progettisti passeranno un progetto, quindi l'esito della loro risultato, della loro attività agli sviluppatori e così via.
+D'altra parte la documentazione serve anche per il cambio generazionale o per gli interventi di nuove figure professionali che devono rapidamente prendere coscienza, essere informati sullo stato, sui motivi che hanno portato, i modi che sono stati eseguiti per la realizzazione del sistema.
+
+Proseguendo con gli elementi costituenti abbiamo un insieme di attività.
+Le attività sono varie e sono caratterizzanti il sistema, il metodo di sviluppo per il modo in cui vengono organizzate, quindi le stesse attività sono svolte ma in ordine con modalità differenti.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=40 80 40 60, % L B R T
+                    clip]
+                    {images/Lez06_p02_fig_01}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Vediamo quali sono.
+Un processo di sviluppo, quindi l'insieme delle attività è costituita da una fase di analisi e di pianificazione innanzitutto.
+
+Nella analisi e pianificazione viene data una prima visione del contesto lavorativo, ma vedremo nel seguito nel dettaglio queste attività.
+L'analisi e la pianificazione vengono seguite da una progettazione, quindi dalla implementazione, quindi la realizzazione dell'eventuale sistema tecnologico, seguite da una validazione e attivazione, quindi la prova e i test che tutto funzioni bene e l'eventuale attivazione nel contesto lavorativo.
+
+La manutenzione è l'ultima fase che segue il sistema o le modifiche che sono state suggerite nell'ambito lavorativo, lo segue nel tempo durante l'attività operativa quotidiana dell'organizzazione.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=40 60 40 60, % L B R T
+                    clip]
+                    {images/Lez06_p02_fig_02}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Vediamo adesso individualmente le diverse attività.
+
+Analisi e pianificazione.
+Selezione dei gruppi.
+Vengono selezionati i gruppi di figure professionali necessari allo svolgimento di questa attività.
+Le figure professionali vengono selezionate tra quelle che abbiamo elencato precedentemente.
+Devono, in questa fase le figure professionali devono capire l'ambito, capire quali sono i problemi effettivamente presentati dal committente.
+
+Notiamo che il committente non è un esperto tecnologo, non è un esperto analista, non è un esperto progettista, ma ha un problema.
+Questo significa che nella fase di analisi il problema andrà effettivamente compreso in termini di possibili interventi tecnologici o di modifica del processo formale lavorativo e in termini di possibili soluzioni che si possono intraprendere.
+
+Verranno in seguito analizzati i processi lavorativi, quindi come viene svolta l'attività rispetto ai problemi che sono stati presentati dal committente.
+
+In seguito viene prodotto uno studio di fattibilità.
+Lo studio di fattibilità prevede una valutazione del realismo, della possibilità tecnologica di realizzare una soluzione prospettata, prevede la realizzabilità economica e propone una misurazione temporale, non proprio la realizzabilità temporale che verrà valutata a posteriori dal committente, ma viene data una valutazione dei tempi e dei soldi, delle risorse economiche necessarie per lo svolgimento.
+
+L'ultima attività è la pianificazione.
+Scelta l'attività, la soluzione proposta dallo studio di fattibilità, viene effettuata la pianificazione del programma di lavoro per la costruzione di questa soluzione.
+Quindi scelta la soluzione, vengono imparati in modo che la soluzione non si riempie, quindi impostate le risorse, risorse umane, quindi figure professionali, ma anche risorse economiche, ma anche risorse di calcolo e le tempistiche che saranno naturalmente compatibili, conformi con gli obiettivi posti dalla impresa.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=40 100 40 60, % L B R T
+                    clip]
+                    {images/Lez06_p02_fig_03}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+La progettazione.
+La progettazione è, diciamo, è svolta in due fasi, la progettazione di massima e la progettazione di dettaglio.
+La progettazione di massima prevede l'indicazione, la descrizione di uno schema logico della possibile soluzione, mentre nel dettaglio interverremo con, nel caso di strumento tecnologico, con dettagli implementativi, quindi la scelta dei linguaggi, la scelta delle risorse di calcolo, la scelta degli applicativi, degli ambienti di sviluppo.
+
+Nel caso di una modifica, per esempio, di formazione saranno descritti i programmi, dei corsi a cui dovremo sottoporre il personale, piuttosto che le effettive modifiche, aggiornamenti degli ambienti di lavoro.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 100 20 60, % L B R T
+                    clip]
+                    {images/Lez06_p02_fig_04}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+La fase successiva alla progettazione è naturalmente l'implementazione.
+Il primo passo è la programmazione.
+La programmazione è un'attività tipica della soluzione tecnologica, programmare vuol dire scrivere i programmi, realizzare l'oggetto tecnologico, realizzare il sistema tecnologico che verrà proposto per migliorare l'ambiente di lavoro.
+
+Seconda attività molto costosa è l'acquisizione e la pulizia dei dati.
+Acquisizione dei dati significa che vengono prodotti gli schemi di come i dati devono essere organizzati, come devono essere organizzati i documenti, quali sono gli strumenti per la loro acquisizione, ma soprattutto vengono anche predisposte le attività di pulizia dei dati.
+Nel caso di trasporto di un sistema, aggiornamento di un sistema, dovremo modificare per esempio i formati dei dati, modificare le organizzazioni, modificare i sistemi di gestione, selezionare i dati obsoleti, quindi fare pulizia dei dati decaduti, dei documenti obsoleti.
+
+Terzo elemento è la documentazione.
+Avevamo accennato precedentemente che la documentazione è un elemento molto importante, sia per la comunicazione del personale tecnologico, quindi se interviene un programmatore a effettuare una modifica non è detto che il programmatore abbia partecipato alla fase di sviluppo del sistema e dovrà essere messo in grado di intervenire il più breve tempo possibile.
+Allo stesso modo se viene acquisita nell'organizzazione una nuova risorsa, un nuovo sviluppatore, ecco che dovrà essere messo in condizioni di conoscere l'aspetto che lo riguarda del sistema nel più breve tempo possibile, senza dover passare necessariamente per la lettura del codice sorgente.
+Attività lunga e costosa.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 80 20 60, % L B R T
+                    clip]
+                    {images/Lez06_p02_fig_05}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Segue la fase di validazione e attivazione.
+Siamo in conclusione del programma di sviluppo.
+
+La prima attività allora è la validazione.
+La validazione significa che se abbiamo prodotto un oggetto tecnologico lo testiamo, quindi viene provato il suo funzionamento in laboratorio, non ancora in ambiente lavorativo, verranno effettuate delle simulazioni o delle prove in ambito ancora tecnologico, delle prove con campioni di utenti.
+
+Nel caso di modifiche all'ambiente lavorativo o nel caso di programmi di formazione verranno effettuati dei casi di studio o verrà minuziosamente provata la possibilità di buon funzionamento del progetto proposto.
+
+Il secondo punto è finalmente l'attivazione in ambiente di lavoro.
+La soluzione proposta viene passata per l'inizio della nuova attività in ambito lavorativo.
+Gli utenti cominciano a provare la soluzione, quindi a modificare il loro metodo di lavoro e valutare la soluzione proposta, l'innovazione proposta, dall'altra la sua accettabilità nel nuovo ambiente, l'accettabilità e l'assimilabilità indicano che effettivamente l'innovazione non è troppo forte ed è comunque adatta all'ambito, al contesto lavorativo specifico.
+
+Altro punto, comunque necessario è lo sviluppo dei programmi di formazione.
+Comunque necessario intendo dire che se viene sviluppato un nuovo sistema informativo in genere vengono svolti dei corsi, delle attività di aggiornamento, di formazione sui nuovi elementi, sui nuovi strumenti che possono avere una durata lunga o più breve, fornire solo alcune informazioni, o nel caso di modifiche nella formazione, nelle modalità lavorative senza supporto di nuovi strumenti tecnologici saranno proprio indirizzati a una modifica diretta del metodo di lavoro.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 80 20 60, % L B R T
+                    clip]
+                    {images/Lez06_p02_fig_06}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Passiamo alla fase, all'attività successiva, la manutenzione, controllo continuo e valutazione.
+
+Gli strumenti offerti e le modifiche, le soluzioni che sono state progettate e proposte vengono controllate nel tempo, vengono monitorate il corretto funzionamento, gli esiti e il comportamento, la reazione del personale alle modifiche, alle soluzioni che sono state proposte.
+
+Inoltre verranno proposti aggiornamenti e miglioramenti sia sul sistema, sul sistema vuol dire che vengono proposte nuove versioni del software o nuove versioni delle eventuali risorse fisiche di calcolo che si trovassero sul mercato, nel caso della formazione si parla di formazione continua, una volta individuati i punti critici del sistema informativo aziendale verranno proposti degli interventi di aggiornamento.
+
+Vi propongo ora alla fine di questo argomento uno spunto di riflessione.
+
+Descrivete le attività costituenti il processo di sviluppo di un sistema per la gestione delle risorse di impresa.
+
+\section{Metodi di sviluppo partecipativi}
+
+
+
+Vediamo ora i metodi di sviluppo partecipativi.
+
+Prima vorrei ricordare il metodo tradizionale, il metodo ciclico che è stato rimpiazzato da questa nuova generazione di metodi di lavoro negli anni 80.
+
+Il metodo ciclico in cosa consisteva?
+Il metodo ciclico aveva due caratteristiche che si sono rivelate fallimentari per questo metodo, troppo costose diciamo per questo metodo di sviluppo.
+
+Da una parte la sequenzialità del metodo, quindi le varie attività che abbiamo visto precedentemente venivano svolte in sequenza, quindi presa la commessa, analisi del progetto, progettazione, implementazione, validazione e manutenzione in sequenza e in maniera compartimentata, cioè alla fase di analisi partecipavano gli analisti, la progettazione, la figura professionale dei progettisti e così via nella programmazione i programmatori e nella valutazione partecipavano i sistemisti o gli analisti del sistema.
+
+Il secondo limite di questo metodo ciclico era il coinvolgimento dell'utente e del committente solo in fase finale, solo in fase di valutazione.
+Queste due caratteristiche che cosa implicavano?
+Implicavano che un errore, una modifica per una non conformità alle richieste presentate dal committente causavano la necessità di rieffettuare il ciclo e modificare fasi di attività pregresse.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 80 20 60, % L B R T
+                    clip]
+                    {images/Lez06_p03_fig_03}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+
+
+I metodi partecipativi invece introducono delle caratteristiche di discontinuità.
+
+L'obiettivo rimane una eventuale giusta architettura software, però anche in questa prima caratteristica possiamo notare una differenza.
+La eventuale giusta architettura software significa che non necessariamente la soluzione è lo sviluppo di uno strumento tecnologico.
+Può darsi che quello che manca nell'ambito lavorativo, quello che manca per la gestione delle risorse di impresa più efficace ed efficiente, sia invece dovuto a una necessità di modifica dell'ambito lavorativo, una maggiore ergonomia piuttosto che metodi di lavoro diversi, piuttosto che necessità di figure funzionali nuove o più aggiornate, più addestrate, più specialistiche.
+
+Il metodo di sviluppo ciclico puntava direttamente alla costruzione di uno strumento tecnologico.
+La soluzione era già in qualche modo impostata all'inizio.
+
+La seconda caratteristica dei metodi partecipativi è che il metodo è fortemente rivolto all'utente, così come la soluzione.
+Non è lo strumento da proporre al centro dell'attenzione, ma è il benessere in ambito lavorativo dell'utente.
+Inoltre, il coinvolgimento dell'utente.
+
+Utente e committente sono coinvolti continuamente in ogni fase del processo di sviluppo, in ogni attività del processo di sviluppo, naturalmente con un coinvolgimento più o meno rilevante, nell'attività più tecniche, è presumibile che saranno coinvolti per verificare la conformità, per quanto in loro potere di comprendere, la conformità con le specifiche date all'inizio.
+
+In ogni fase di attività ci sono dei rappresentanti di tutte le figure professionali, proprio per evitare la compartimentazione del metodo, evitare che ogni figura professionale possa valutare il lavoro, gli eventuali limiti, le eventuali carenze dell'attività precedente e dover richiedere il rifacimento del lavoro.
+
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 80 20 60, % L B R T
+                    clip]
+                    {images/Lez06_p03_fig_04}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Questi metodi partecipativi sono basati sulle tecniche di gruppo.
+
+La tecnica più diffusa è la tecnica del brainstorming.
+Poche persone, tempo limitato, ma libertà di manifestazione, libertà di pensiero, si punta alla creatività.
+
+Ma ci sono anche altre sessioni di discussione per cui sono introdotte le figure del coordinatore, del moderatore della discussione o del segretario che deve sintetizzare, raccogliere, verbalizzare, quindi conservare in maniera permanente per la documentazione o per i successivi commenti quanto è stato deciso e quanto è stato prodotto nelle varie sedute.
+
+L'altro punto è cercare la corretta soluzione.
+Avevamo detto che la soluzione tecnologica è eventuale.
+Questi metodi puntano a una corretta soluzione rispetto alle necessità dell'utente che ci sono state manifestate dal comitente.
+
+Proseguiamo con evitare l'interazione.
+I metodi partecipativi coinvolgono l'utente e il comitente in tutte le fasi e sono basati sull'attività di gruppo multidisciplinare, quindi ogni figura professionale partecipa a tutte le sedute, a tutte le attività con maggiore o minore impegno proprio per valutare e intervenire sulle eventuali modifiche, sulle eventuali correzioni, sugli eventuali aggiornamenti da fare agli strumenti che si stanno, alle scelte che si stanno effettuando in una data attività ed evitare di dover rifare, tornare sui propri passi.
+
+Scambio continuo.
+
+Il lavoro di gruppo permette quindi uno scambio continuo sia linguistico, cioè si impara a parlare la stessa lingua di figure professionali diverse.
+Forse nell'ambito tecnologico questa differenza è meno sentita ma possiamo renderci conto che far uniformare, far armonizzare un linguaggio del comitente o degli utenti con i linguaggi dei programmatori o dei progettisti o dei sistemisti porta un grande vantaggio, una crescita complessiva al gruppo di intervento.
+
+La continua verifica, come abbiamo detto ogni figura professionale può costantemente valutare anche il lavoro che viene svolto nelle altre figure professionali, nelle altre attività, negli altri passi del processo di sviluppo del sistema.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 60 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p03_fig_05}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Vediamo quali sono i vantaggi del lavoro di gruppo, sono prospettate più migliori e direi varie soluzioni perché sono coinvolte mentalità diverse, figure professionali diverse vuol dire esperienze anche mentalità diverse.
+
+Inoltre l'uso delle risorse è messo a comune quindi può essere più efficiente, vengono eliminate con la discussione le idee meno valide.
+
+La produttività in questo modo può essere accresciuta e accresciuto anche l'apprendimento, sia in termini diciamo quantitativi si impara di più, si impara non solo a migliorare nel proprio ambito lavorativo ma anche con esperienze come abbiamo detto di discipline differenti.
+
+In più evitando iterazioni del processo lavorativo potendo collaborare costantemente con le altre figure professionali, avendo una discussione contributiva costante l'apprendimento si manifesta più veloce.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 60 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p03_fig_06}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Vediamo quali sono questi metodi di sviluppo partecipativi.
+Il primo è il joint application development.
+Innanzitutto dal nome si capisce che l'obiettivo di questo metodo è lo sviluppo di uno strumento tecnologico.
+Una scelta è stata fatta, è stato individuato che la soluzione può venire da un intervento, da un aggiornamento, dall'inserimento di un nuovo strumento tecnologico.
+
+Il secondo metodo è il rapid application development.
+Rapid si riferisce proprio al fatto che lo strumento tecnologico, perché stiamo parlando di un metodo di sviluppo in cui ancora è stata prediletta, è stata scelta una soluzione tecnologica, in questo caso viene posto l'accento sulla rapidità di consegna.
+Questo vuol dire che in questo metodo vengono utilizzate tecnologie per lo sviluppo veloce, tecnologie che da un lato permettono la realizzazione di strumenti tecnologici, programmi, in maniera molto veloce, dall'altra però dobbiamo considerare che questa rapidità è pagata con una scarsa, spesso, ottimizzazione.
+Quindi questo metodo permette di inserire nell'ambito lavorativo rapidamente la soluzione, lo strumento tecnologico proposto quale soluzione, ma sarà frequentemente seguito da una fase di ottimizzazione o, come si dice, anche di ingegnerizzazione della applicazione.
+
+Terzo metodo è participatory design.
+In questo caso il nome del metodo ci indica che si punta a un'attività collaborativa, partecipativa, quindi il fuoco di questo metodo è che tutte le figure coinvolte, sia per la ricerca della soluzione ma anche per chi dovrà poi mantenerla, siedono intorno a un tavolo, collaborano e interagiscono nella ricerca di un miglioramento che non è necessariamente, come vedremo, tecnologico.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 100 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p04_fig_01}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Joint application development.
+Il suo obiettivo, abbiamo detto, è la qualità del sistema.
+La qualità del sistema indichiamo che può essere sviluppato qualcosa di nuovo oppure possono essere migliorate le situazioni esistenti.
+Da una parte corretti, bachi, errori, creata una nuova versione aggiornando con strumenti più attuali, con strumenti più efficaci o rapidi, efficienti, oppure dall'altra parte con la realizzazione di un sistema completamente nuovo.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 60 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p04_fig_02}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Le fasi di realizzazione di questo metodo sono innanzitutto la definizione del progetto, individuata la soluzione, viene descritto sia un modello logico, viene prodotto una descrizione logica di questa soluzione, sia vengono effettuate le eventuali scelte implementative che porteranno alla costruzione del sistema.
+
+Siamo nel joint application development.
+La seconda fase riguarda la ricerca delle informazioni, delle eventuali possibili scelte alternative, quindi viene svolto uno stato dell'arte, una ricerca di mercato.
+In seguito viene preparata la sessione, la riunione, un gruppo di riunioni considerate necessarie di discussione, di realizzazione, di sviluppo ma pianificate nel loro numero e generalmente valutate nella loro dimensione temporale.
+
+La sessione viene svolta, coordinata da un moderatore se è una discussione e da un segretario, oppure se sono sessioni progettuali o sessioni realizzative, saranno seguite da presentazione dei risultati raggiunti, discussione, quindi comunque saranno seguite da una fase di documentazione, di discussione, coordinata dal moderatore che in genere è il capo progetto, il responsabile del processo di sviluppo e verbalizzate dal segretario.
+
+È seguita una fase di integrazione e di validazione, integrazione dove ogni gruppo realizza l'elemento, la porzione di sistema che a lui è stata affidato, la realizzazione della parte di soluzione che gli è stata affidata e viene organizzata la valutazione.
+
+Dicevamo che la valutazione può essere svolta in laboratorio, quindi in ambito tecnologico, oppure sottoposta a un campione degli utenti, quindi una quantità limitata di lavoratori dell'organizzazione destinataria per provare e verificare il corretto funzionamento, l'usabilità della soluzione e naturalmente la sua efficacia.
+
+L'ultimo punto è la stesura del documento finale, quindi la documentazione che attesti il funzionamento, le scelte effettuate e i risultati della valutazione.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 100 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p04_fig_03}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Vediamo ora il rapid application development.
+
+L'obiettivo è lo sviluppo di un strumento tecnologico, ma in tempi rapidi, quindi velocità di consegna del sistema.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 100 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p04_fig_04}
+  % \caption{Sommario}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Le fasi di questo metodo prevedono una pianificazione delle necessità, quindi l'analisi dell'ambiente di lavoro, l'analisi del problema che è stato prospettato, l'analisi delle figure professionali disponibili e della loro preparazione.
+
+In seguito viene progettato il sistema assieme all'utente. 
+
+Rapid application development, quindi uno strumento tecnologico sarà realizzato o modificato, potrà essere riscritta, aggiornata, una componente di un sistema esistente oppure progettato, quindi questo richiederà risorse e tempi maggiori, un sistema exnovo. Ma il punto rilevante qui è che l'utente viene coinvolto in questa fase di sviluppo soprattutto perché parliamo di una consegna rapida, quindi le ripetizioni, le interazioni, le modifiche in itinere devono essere limitate il più possibile.
+
+La costruzione rapida, come dicevamo, avviene utilizzando metodi e strumenti per lo sviluppo rapido.
+Esistono attualmente ambiti di sviluppo di software, sviluppo di applicazioni che permettono non la stesura di programmi, che è un'attività a cui sono abituati ovviamente i programmatori, ma oggettivamente molto lenta.
+
+Esistono ambienti che permettono, mediante interazione grafica, di comporre degli applicativi complessi semplicemente unendo dei simboli grafici che rappresentano una procedura a granularità inferiore a quella del sistema da costruire.
+
+Il metodo del rapid application development prevede la transizione, quindi il passaggio dal sistema costruito all'ambito lavorativo in tempi rapidi.
+
+Qui c'è da dire che questo metodo di sviluppo predilige in maniera rilevante, in maniera importante, uno strumento di documentazione molto particolare, il prototipo.
+
+Il prototipo è il sistema che deve essere realizzato in crescita, il sistema che viene costruito e presentato, quindi sottoposto diciamo a transizione in ambito lavorativo costantemente.
+
+Si parla di sviluppo incrementale di prototipi, si comincia con la realizzazione di alcune delle funzionalità richieste dal comitente, previste in fase di progettazione e vengono realizzate rapidamente e proposte all'ambiente d'uso.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 100 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p04_fig_05}
+  % \caption{Lez06_p04_fig_05}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+
+Il terzo metodo è il Participatory Design, l'obiettivo è la qualità del lavoro.
+
+\FloatBarrier
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.50\textwidth,
+                    trim=20 80 20 40, % L B R T
+                    clip]
+                    {images/Lez06_p04_fig_06}
+  % \caption{Lez06_p04_fig_05}
+  % \label{fig:Lez15_p06_fig_02}
+\end{figure}
+\FloatBarrier
+\noindent
+
+Non è necessario che la soluzione a priori debba essere tecnologica, ma i possibili interventi previsti possono essere una risistemazione dell'arredamento.
+
+Pensiamo all'evoluzione della modifica ergonomica per esempio del monitor di un computer rispetto alla tastiera, poi al mouse, poi a dove viene posta la tastiera e la configurazione anche del tavolo di lavoro con la sedia che utilizziamo.
+
+Sono tutti aspetti rilevanti per la qualità del lavoro che non toccano però aspetti tecnologici, non tecnologici dell'ambito della gestione delle informazioni che è quello che stiamo qui focalizzando.
+
+In seguito può esserci una riorganizzazione dei ruoli.
+La riorganizzazione dei ruoli vuol dire che si è individuato che il problema può essere di aggiornamento delle figure professionali o di modifica del management oppure la tecnologia.
+
+Non è da questo metodo esclusa la possibilità di dover sviluppare o modificare un ambito, uno strumento tecnologico ma non è prediletta questa, non è privilegiata questa come soluzione.
+
+Come ultimo passo possiamo considerare, come ultimo possibile intervento, consideriamo il bilanciamento tra le pratiche tradizionali e innovazioni.
+
+A cosa ci riferiamo?
+Ci riferiamo specificatamente alla necessità di prevedere una fase, un periodo di assimilazione delle soluzioni proposte.
+Quindi se l'obiettivo principale di questo metodo è la qualità dell'ambito lavorativo sarà prestata particolare attenzione alla usabilità della soluzione proposta, alla sua efficacia, alla sua accettazione e gradevolezza dagli utenti, dai lavoratori.
+
+In conclusione vi propongo uno spunto di riflessione.
+Evidenziate le differenze tra i metodi di sviluppo partecipativi.
