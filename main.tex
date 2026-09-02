@@ -18,6 +18,8 @@
 \usepackage{placeins}          % \FloatBarrier
 \usepackage{titlesec}          % Controllo spazi titoli
 % \usepackage{lipsum}          % Solo per testo fittizio
+\usepackage{fancyhdr}
+\usepackage{lastpage}
 % ------------------------------------------------------------
 
 
@@ -61,6 +63,8 @@
 % ------------------------------------------------------------
 
 
+
+
 % ------------------------------------------------------------
 % PREVENZIONE FIGURE ISOLATE / PAGINE VUOTE
 % ------------------------------------------------------------
@@ -74,20 +78,46 @@
 \renewcommand{\textfraction}{.2}        % Almeno 20% di testo nella pagina
 \renewcommand{\topfraction}{.9}         % Figure in cima: fino al 90%
 \renewcommand{\bottomfraction}{.8}      % Figure in basso: fino all’80%
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
 % ------------------------------------------------------------
 
 
 % ------------------------------------------------------------
 % DATI DOCUMENTO
 % ------------------------------------------------------------
-\title{Architettura degli elaboratori}
+\title{Sistema Gestione Informazioni}
 \author{Antonio Runcio}
 \date{Aprile 2025}
 % ------------------------------------------------------------
 
 
-\includeonly{80_cap_8} % Compila solo il capitolo specificato
+\includeonly{90_cap_9} % Compila solo il capitolo specificato
 % ------------------------------------------------------------
+
+% ------------------------------------------------------------
+% PIEDE DI PAGINA
+% ------------------------------------------------------------
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyfoot[C]{%
+  Cap.~\thechapter{} -- pag.~\thepage{} di \pageref{LastPage}%
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Prima pagina dei capitoli
+\fancypagestyle{plain}{
+  \fancyhf{}
+  \fancyfoot[C]{%
+    Cap.~\thechapter{} -- pag.~\thepage{} di \pageref{LastPage}%
+  }
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
 
 
 \begin{document}
@@ -96,7 +126,6 @@
 % \tableofcontents % Indice (se serve)
 
 \mainmatter
-\pagestyle{plain} % Numeri di pagina in basso al centro
 
 
 % ------------------------------------------------------------
